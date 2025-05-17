@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weatherman</title>
+    <link rel="stylesheet" href="images/css/weather-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <div class="wrapper">
+        <div class="container">
+            <header>
+                <h1>WEATHERMAN</h1>
+                <p class="subtitle">Your personal weather assistant :D</p>
+            </header>
+
+            <div class="search-form">
+                <input type="text" id="city-input" placeholder="Enter city name...">
+                <button id="search-button">Search</button>
+            </div>
+
+            <div class="error-message" id="error-message">
+                City not found. Please check the spelling and try again.
+            </div>
+
+            <div class="loading" id="loading">
+                <div class="loading-spinner"></div>
+                <p>Fetching weather data...</p>
+            </div>
+
+            <div class="initial-message" id="initial-message">
+                <p>Enter a city name to show the current weather info</p>
+            </div>
+
+            <div class="weather-card" id="weather-card">
+                <div class="weather-content">
+                    <div class="city-info">
+                        <h2 class="city-name" id="city-name">City Name</h2>
+                        <p class="date" id="date">Date</p>
+                    </div>
+
+                    <div class="weather-main">
+                        <div class="temperature" id="temperature">0°C</div>
+                        <div class="weather-icon-box">
+                            <i class="wi weather-icon" id="weather-icon"></i>
+                            <p class="weather-description" id="weather-description">Clear</p>
+                        </div>
+                    </div>
+
+                    <div class="weather-details">
+                        <div class="detail-item">
+                            <p class="detail-label">Feels Like</p>
+                            <p class="detail-value" id="feels-like">0°C</p>
+                        </div>
+                        <div class="detail-item">
+                            <p class="detail-label">Humidity</p>
+                            <p class="detail-value" id="humidity">0%</p>
+                        </div>
+                        <div class="detail-item">
+                            <p class="detail-label">Wind Speed</p>
+                            <p class="detail-value" id="wind-speed">0 m/s</p>
+                        </div>
+                        <div class="detail-item">
+                            <p class="detail-label">Pressure</p>
+                            <p class="detail-value" id="pressure">0 hPa</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="footer-text">Made by M0X | Mohammad Alkhayat</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
